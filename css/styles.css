@@ -219,19 +219,29 @@ nav,
 
 .modal-form__input{
     padding-top: 10px;
+    border-radius: 4px;
 }
 
 .modal-form__input input,
 .textarea-modal-form{
+    padding-left: 42px;
     outline: none;
-    width: 416px;
+    width: 100%;
     display: block;
     border: 1px solid rgba(0, 0, 0, 0.322);
+    border-radius: 4px;
+}
+
+.modal-form__input input{
+    height: 40px;
+}
+
+.textarea-modal-form{
+    padding-top: 12px;
+    padding-left: 16px;
 }
 
 .input_container{
-    border: 1px solid rgba(0, 0, 0, 0.322);
-    border-radius: 4px;
     display: flex;
     justify-content: center;
 }
@@ -242,8 +252,6 @@ nav,
 
 .input_textarea{
     height: 120px;
-    padding-top: 12px;
-    padding-bottom: 12px;
 }
 
 .modal-conainer-form{
@@ -251,9 +259,36 @@ nav,
     border: none;
 }
 
+.icon_form_input{
+    width: 18px;
+    height: 18px;
+
+    position: absolute;
+    top: 0;
+    left: 12px;
+}
+
+.modal-form__input p{
+    margin-top: 10px;
+}
+
 .modal-form__input_check p{
-    width: 400px;
-    display: inline-block;
+    position: relative;
+    bottom: 18px;
+    left: 36px;
+}
+
+.check_input_icon{
+    border: 2px solid #000;
+    height: 15px;
+    width: 15px;
+    margin-top: 25px;
+    margin-left: 12px;
+    border-radius: 4px;
+}
+
+.check_input_icon:focus{
+    background-color: #1380da;
 }
 
 .modal-form-button{
@@ -272,8 +307,9 @@ nav,
     resize: none;
 }
 
-.modal-form__input_check{
-    padding-top: 20px;
+.modal-form__input_check input{
+    margin-left: 10px;
+    margin-top: 20px;
 }
 /* ------------------------------------ Index ------------------------------------ */
 
@@ -459,7 +495,8 @@ nav,
     width: 231px;
 }
 
-.footer_social_netwoks h3{
+.footer_social_netwoks p{
+    font-weight: bold;
     color:#fff;
 }
 
@@ -497,13 +534,22 @@ nav,
     margin-bottom: 20px;
 }
 
-.subscription_botton_footer{
+.subscription_input_footer{
     background-color: #2F303A;
     color: rgba(255, 255, 255, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     height: 50px;
     width: 358px;
+    padding-left: 16px;
+    position: relative;
+    outline: none;
+    bottom: 4px;
+}
+
+.subscription form{
+    height: 100%;
+    display: inline;
 }
 
 .button_sub_footer{
@@ -514,9 +560,7 @@ nav,
 
     height: 50px;
     width: 200px;
-
-    position: relative;
-    top: 4px;
+    margin-left: 12px;
 }
 
 .button_sub_footer svg{
