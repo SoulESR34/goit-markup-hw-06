@@ -244,6 +244,7 @@ nav,
 .input_container{
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .input_container input:focus-within{
@@ -264,12 +265,16 @@ nav,
     height: 18px;
 
     position: absolute;
-    top: 0;
+    top: 11px;
     left: 12px;
 }
 
 .modal-form__input p{
     margin-top: 10px;
+}
+
+.modal-form__input_check{
+    position: relative;
 }
 
 .modal-form__input_check p{
@@ -279,16 +284,30 @@ nav,
 }
 
 .check_input_icon{
-    border: 2px solid #000;
     height: 15px;
     width: 15px;
     margin-top: 25px;
     margin-left: 12px;
     border-radius: 4px;
+    position: relative;
+    opacity: 0;
+    z-index: 1;
 }
 
-.check_input_icon:focus{
-    background-color: #1380da;
+.box_checkbox{
+    border: 2px solid #000;
+    border-radius: 4px;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    overflow: hidden;
+}
+
+.check_input_icon:checked + .box_checkbox{
+    background-color: #2196F3;
+    background-image: url(../images/svg/sprite.svg#checked);
 }
 
 .modal-form-button{
