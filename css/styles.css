@@ -247,8 +247,16 @@ nav,
     position: relative;
 }
 
-.input_container input:focus-within{
+.input_container input:focus,
+.input_container input:hover,
+.input_container textarea:focus,
+.input_container textarea:hover{
     border: 1px solid #2196F3;
+}
+
+.input_container input:focus + .icon_form_input,
+.input_container input:hover + .icon_form_input{
+    fill: #2196F3;
 }
 
 .input_textarea{
@@ -298,16 +306,23 @@ nav,
     border: 2px solid #000;
     border-radius: 4px;
     height: 15px;
-    width: 15px;
+    width: 16px;
     position: absolute;
     top: 0px;
     left: 10px;
-    overflow: hidden;
+    overflow: hidden;    
+
 }
 
 .check_input_icon:checked + .box_checkbox{
     background-color: #2196F3;
-    background-image: url(../images/svg/sprite.svg#checked);
+    border: none;
+}
+
+.icon_checkbox{
+    fill: #fff;
+    height: 13px;
+    width: 16px;
 }
 
 .modal-form-button{

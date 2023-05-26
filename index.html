@@ -54,46 +54,50 @@
             </button>
             <fieldset class="modal-conainer-form">
               <legend>Deje sus datos, nos contactaremos con usted</legend>
-              <label for="" class="modal-form__input">
+              <label for="user_name" class="modal-form__input">
                 <p>Nombre</p>
                 <div class="input_container">
+                  <input name="user_name" type="text" required>
                   <svg class="icon_form_input">
                     <use href="./images/svg/sprite.svg#icon_form_user"></use>
                   </svg>
-                  <input type="text">
                 </div>
               </label>
 
-              <label for="" class="modal-form__input">
+              <label for="phone" class="modal-form__input">
                 <p>Teléfono</p>
                 <div class="input_container">
+                  <input name="phone" type="tel" required>
                   <svg class="icon_form_input">
                     <use href="./images/svg/sprite.svg#icon_form_phone"></use>
                   </svg>
-                  <input type="tel">
                 </div>
               </label>
 
-              <label for="" class="modal-form__input">
+              <label for="email" class="modal-form__input">
                 <p>E-mail</p>
                 <div class="input_container">
+                  <input name="email" type="email" required>
                   <svg class="icon_form_input">
                     <use href="./images/svg/sprite.svg#icon_form_mail"></use>
                   </svg>
-                  <input type="email">
                 </div>
               </label>
 
-              <label for="" class="modal-form__input">
+              <label for="comments" class="modal-form__input">
                 <p>Comentarios</p> 
                 <div class="input_container input_textarea">
-                  <textarea class="textarea-modal-form" name="comments" id="" rows="7" placeholder="Introduzca texto"></textarea>
+                  <textarea name="comments" class="textarea-modal-form" name="comments" id="" rows="7" placeholder="Introduzca texto"></textarea>
                 </div>
               </label>
 
-              <label for="" class="modal-form__input_check">
-                  <input type="checkbox" class="check_input_icon">
-                  <span class="box_checkbox"></span>
+              <label for="check" class="modal-form__input_check">
+                  <input name="check" type="checkbox" class="check_input_icon" required>
+                  <span class="box_checkbox">
+                    <svg class="icon_checkbox">
+                      <use href="./images/svg/sprite.svg#checked"></use>
+                    </svg>
+                  </span>
                   <p>Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones</p>
               </label>
             </fieldset>
