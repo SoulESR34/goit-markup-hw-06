@@ -4,6 +4,16 @@
 
 /* Generales  */
 
+:root{
+    color: #2196F3
+    --color-buttons: #2196F3;
+    --color-variable:;
+    --color-variable:;
+    --color-variable:;
+    --color-variable:;
+    --color-variable:;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     color:#757575;
@@ -583,10 +593,11 @@ nav,
 
 .subscription form{
     height: 100%;
-    display: inline;
+    display: flex;
 }
 
 .button_sub_footer{
+    margin-top: 34px;
     color: #fff;
     font-weight: bold;
     background-color: #2196F3;
@@ -595,12 +606,17 @@ nav,
     height: 50px;
     width: 200px;
     margin-left: 12px;
+    display: flex;
+    align-items: center;
+    padding-left: 39px;
+    padding-right: 28px;
 }
 
 .button_sub_footer svg{
     margin-left: 20px;
     width: 24px;
     height: 24px;
+    fill: #fff;
 }
 /* ------------------------------------ Portafolio ------------------------------------ */
 
